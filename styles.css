@@ -12,5 +12,76 @@
 }
 
 html {
-  font-family: roboto, sans-serif, serif;
+  font-family: Roboto, sans-serif, serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+img {
+  height: 20px;
+  width: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 0.75fr 4fr;
+  grid-template-rows: 0.75fr 3fr;
+}
+
+/* DASHBOARD SECTION */
+
+#dashboard {
+  border: 2px solid black;
+  background-color: var(--dash-background);
+  height: 100vh;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 0.5fr 6fr;
+  padding: 0 1.5rem;
+}
+
+#title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.75rem;
+}
+#title img {
+  height: 30px;
+  width: 30px;
+}
+
+#options {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin-top: 1rem;
+  list-style-type: none;
+  font-size: 1.2em;
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* HEADER SECTION */
+
+#header {
+  border: 2px solid green;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+/* CONTENT SECTION */
+
+#content {
+  border: 2px solid orangered;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
